@@ -89,14 +89,11 @@ header {
 h2 {
     font-family: 'Audiowide';
     color: rgb(82, 85, 83);
-    /* padding-left: 40px;
-    padding-top: 10px; */
     line-height: 3
 }
 
 p {
    line-height: 1.5;
-   /* padding: 20px; */
 }
 
 #inicio, #tipos, #porque, #vermais {
@@ -117,7 +114,6 @@ footer, .rodape a{
     background-color: black;
     color: white;
     padding-inline: 10px 10px;
-    /* position: static; */
     text-align: center;
     padding: 10px;
 }
