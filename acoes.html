@@ -12,7 +12,7 @@
         <nav class="menu-navegacao">
             <a href="./index.html">Ínicio</a>
             <a href="./porqueAco.html">Por que o aço?</a>
-            <a href="./acoes.html">Ações</a>
+            <a href="./acoes.html" class="ativo">Ações</a>
         </nav>
         <div class="capa">
             <h1>Ações Práticas - O que você pode fazer</h1>
@@ -21,10 +21,10 @@
     </header>
 
     <main>
-        <section>
+        <section id="inicio">
             <h2>A economia circular só funciona quando todos participam.</h2>
             <p>Veja como você pode ajudar a manter o ciclo do aço ativo:</p>
-            <div class="topicos">
+            <div class="topicos" id="container-acoes">
                 <ul>
                     <li><strong>🚮Descarte Correto:</strong> Não misture metais com lixo orgânico. O aço é 100% reciclável, mas ele precisa chegar limpo às cooperativas para facilitar a triagem magnética.</li>
                     <li><strong>♻️Identifique o Selo de Reciclabilidade:</strong> Muitas embalagens de aço possuem o símbolo de reciclagem. Dar preferência a produtos com embalagens metálicas é uma escolha consciente, já que o aço volta para a prateleira em cerca de 60 dias.</li>
@@ -35,11 +35,15 @@
         </section>
 
         <section>
-            <div>
+            <div class="container-central">
                 <h2>Quero fazer parte!</h2>
-                <form action="">
-                    <label for="nome">Seu nome completo</label>
-                    <input type="text" id="nome" name="nome" required placeholder="Ex: joao@email.com">
+                <form class="forms" id="forms-adesao" action="">
+                    <label for="nome">Seu nome completo:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Ex: João da Silva">
+                    
+                    <label for="email">Insira seu email:</label>
+                    <input type="text" id="email" name="email" required placeholder="Ex: joao@email.com">
+                    
                     <button type="submit">Registrar a minha adesão</button>
                 </form>
             </div>
