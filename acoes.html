@@ -13,7 +13,7 @@
         <nav class="menu-navegacao">
             <a href="./index.html">Ínicio</a>
             <a href="./porqueAco.html">Por que o aço?</a>
-            <a href="./acoes.html">Ações</a>
+            <a href="./acoes.html" class="ativo">Ações</a>
         </nav>
         <div class="capa">
             <h1>Ações Práticas - O que você pode fazer</h1>
@@ -22,25 +22,34 @@
     </header>
 
     <main>
-        <section>
+        <section id="inicio">
             <h2>A economia circular só funciona quando todos participam.</h2>
             <p>Veja como você pode ajudar a manter o ciclo do aço ativo:</p>
+<<<<<<< HEAD
             <div class="topicos">
-                <!-- <ul>
+                <ul>
+=======
+            <div class="topicos" id="container-acoes">
+                <ul>
+>>>>>>> afbeaab323c7ffa0c826eda11d816efbc7fb3504
                     <li><strong>🚮Descarte Correto:</strong> Não misture metais com lixo orgânico. O aço é 100% reciclável, mas ele precisa chegar limpo às cooperativas para facilitar a triagem magnética.</li>
                     <li><strong>♻️Identifique o Selo de Reciclabilidade:</strong> Muitas embalagens de aço possuem o símbolo de reciclagem. Dar preferência a produtos com embalagens metálicas é uma escolha consciente, já que o aço volta para a prateleira em cerca de 60 dias.</li>
                     <li><strong>🌀Apoie a Logística Reversa:</strong> Ao trocar de eletrodomésticos, procure empresas ou prefeituras que ofereçam o serviço de coleta de "Linha Branca". Esses produtos são ricos em aço de alta qualidade.</li>
                     <li><strong>🏗️Construção Sustentável:</strong> Se for construir ou reformar, considere o uso de estruturas metálicas. Além de gerarem menos resíduos no canteiro de obras, o aço utilizado pode ser reaproveitado integralmente no futuro.</li>
-                </ul> -->
+                </ul>
             </div>
         </section>
 
         <section>
-            <div>
+            <div class="container-central">
                 <h2>Quero fazer parte!</h2>
-                <form action="">
-                    <label for="nome">Seu nome completo</label>
-                    <input type="text" id="nome" name="nome" required placeholder="Ex: joao@email.com">
+                <form class="forms" id="forms-adesao" action="">
+                    <label for="nome">Seu nome completo:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Ex: João da Silva">
+                    
+                    <label for="email">Insira seu email:</label>
+                    <input type="text" id="email" name="email" required placeholder="Ex: joao@email.com">
+                    
                     <button type="submit">Registrar a minha adesão</button>
                 </form>
             </div>

@@ -58,6 +58,14 @@ header {
 
 }
 
+html {
+    height: 100%;
+}
+
+main {
+    flex: 1;
+}
+
 .menu-navegacao {
     background-color: white;
     padding: 15px;
@@ -86,10 +94,42 @@ header {
 
 }
 
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#porque {
+    background-color: white;
+    max-width: 100%;
+}
+
+.container-central {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 h2 {
     font-family: 'Audiowide';
     color: rgb(82, 85, 83);
-    line-height: 3
+    line-height: 4;
+    border-left: 5px solid rgba(117, 148, 132, 0.781);
+    padding-left: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+li {
+    background-color: rgba(170, 172, 171, 0.322);
+    padding: 12px 18px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    border-left: 5px solid rgb(170, 172, 171);
 }
 
 p {
@@ -97,7 +137,9 @@ p {
 }
 
 #inicio, #tipos, #porque, #vermais {
-    margin: 30px;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .topicos {
@@ -105,15 +147,44 @@ p {
     line-height: 2;
 }
 
-.emoji {
-    font-size: 80px;
-    margin-top: 10px;
-}
-
 footer, .rodape a{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.842);
     color: white;
     padding-inline: 10px 10px;
     text-align: center;
     padding: 10px;
+    cursor: default;
+}
+
+.botao {
+    display: inline-block;
+    background-color:rgb(154, 156, 155);
+    color: black;
+    padding: 15px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.topicos {
+    display: grid;
+}
+
+.forms {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 25px 60px;
+    background-color: rgba(216, 216, 216, 0.719);
+    border-radius: 12px;
+    border: 1px solid #b8b5b5;
+}
+
+.forms input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    height: 15px;
 }
