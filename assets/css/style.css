@@ -13,7 +13,6 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    font-size: 15px;
 }
 
 body {
@@ -22,6 +21,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-size: 15px;
 }
 
 h1 {
@@ -75,6 +75,7 @@ main {
     left: 0;
     width: 100vw;
     z-index: 100;
+    opacity: 1;
 }
 
 .menu-navegacao a {
@@ -86,7 +87,7 @@ main {
     transition: 0.9s;
     padding-left: 20px;
     padding-right: 20px;
-
+    font-size: (1.2rem, 4vw, 3rem);
 }
 
 .menu-navegacao a:hover, .ativo {
@@ -102,7 +103,7 @@ section {
 
 .blocoBranco {
     background-color: white;
-    /* max-width: 100%; */
+    max-width: 100%;
 }
 
 .container-central {
@@ -116,6 +117,8 @@ h2 {
     line-height: 4;
     border-left: 5px solid rgba(117, 148, 132, 0.781);
     padding-left: 15px;
+    padding-top: 10px;
+    padding-inline: 10px;
 }
 
 ul {
@@ -138,11 +141,11 @@ p {
    padding: 5px;
 }
 
-/* #inicio, #tipos, #porque, #vermais {
+#inicio, #tipos, #porque, #vermais {
     padding: 20px 20px;
     max-width: 800px;
     margin: 0 auto;
-} */
+}
 
 .topicos {
     padding-top: 20px;
@@ -170,7 +173,7 @@ footer, .rodape a{
     margin: 15px 0;
 }
 
-.formulario {
+.forms {
     max-width: 400px;
     margin: 20px auto;
     padding: 25px 60px;
@@ -179,7 +182,7 @@ footer, .rodape a{
     border: 1px solid #b8b5b5;
 }
 
-.formulario input {
+.forms input {
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
@@ -189,14 +192,24 @@ footer, .rodape a{
 }
 
 .acao-item {
-    background-color: pink;
-    padding: 20px;
+    background-color: rgba(146, 177, 36, 0.192);
+    padding: 15px;
     border-radius: 8px;
-    border-top: 4px solid purple;
+    border-top: 4px solid rgb(80, 105, 32);
     text-align: center;
     transform: 0.9s;
+    margin: 10px;
 }
 
 .acao-item:hover {
     transform: translateY(-5px);
+}
+
+#container-acoes {
+    background-color: rgba(195, 252, 89, 0.13);;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    border-left: 5px solid rgb(170, 172, 171);
+    max-width: 100%;
 }
