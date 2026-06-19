@@ -22,9 +22,27 @@ for(let i = 0; i < acoes.length; i++){
 const nav = document.querySelector('.menu-navegacao')
 
 window.addEventListener('scroll', () => {
-    if(window.scrollY > 1){
-        nav.computedStyleMap.display = 'none'
+    if(window.scrollY > 10){
+        nav.style.opacity = '0.5'
     }else {
-        nav.computedStyleMap.display = 'block'
+        nav.style.opacity = '1'
+    }
+});
+
+const form = document.getElementById("forms-adesao");
+const msg = document.getElementById("mensagem-retorno")
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    if(form.checkValidity()){
+        const nome = document.getElementById("nome").value
+        msg.textContent = `✅ Sucesso, ${nome}! Adesão resgistrada.`
+        msg.className = 'mensagem-retorno sucesso'
+        form.reset()
+    }else{
+        msg.textContent = '❌ Preencha os campos corretamente.';
+        msg.className = 'mensagem-retorno erro';
+        msg.style.display = 'block';
     }
 })
